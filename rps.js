@@ -1,4 +1,10 @@
 var userChoice = prompt("Do you choose rock, paper or scissors?");
+if((userChoice !== "rock")||(userChoice !=="papper") ||(userChoice !== "scissors")){
+    console.log("Invalid input");
+}
+else{
+    console.log("User: "+userChoice);
+}
 var computerChoice = Math.random();
 if (computerChoice < 0.34) {
 	computerChoice = "rock";
